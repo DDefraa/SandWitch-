@@ -7,7 +7,7 @@ public class GridManager : MonoBehaviour
     public int gridSize = 4;
     public float cellSize = 1.0f;
     public Vector3 gridOffset = Vector3.zero;
-    public GameObject cellPrefab;  // Trascina il tuo prefab della cella qui
+    public GameObject cellPrefab; 
 
     void Start()
     {
@@ -23,12 +23,12 @@ public class GridManager : MonoBehaviour
                 // Calcola la posizione della cella con l'offset
                 Vector3 cellPosition = new Vector3(col * cellSize, 0, row * cellSize) + gridOffset;
 
-                // Crea una cella utilizzando il prefab
+               
                 GameObject cell = Instantiate(cellPrefab, cellPosition, Quaternion.identity);
 
-                // Personalizza l'aspetto della cella come desiderato
+               
 
-                // Aggiungi uno script per gestire l'interazione con la cella
+                
                 cell.AddComponent<CellInteraction>();
             }
         }

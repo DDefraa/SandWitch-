@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject[] prefabsToInstantiate;  // Trascina i tuoi prefabbricati qui
-    public Transform[] spawnPoints;              // Trascina i transform degli spawn points qui
+    public GameObject[] prefabsToInstantiate;  
+    public Transform[] spawnPoints;              
 
     void Start()
     {
@@ -14,11 +14,7 @@ public class SpawnManager : MonoBehaviour
 
     void InstantiatePrefabs()
     {
-        //if (prefabsToInstantiate.Length != 4 || spawnPoints.Length != 4)
-        //{
-        //    Debug.LogError("Devi fornire esattamente 4 prefabbricati e 4 punti di spawn.");
-        //    return;
-        //}
+    
 
         for (int i = 0; i < 4; i++)
         {
